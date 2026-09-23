@@ -1,3 +1,5 @@
+from crud import addTask
+
 def mainLogic():
 
     while True:
@@ -13,7 +15,7 @@ def mainLogic():
             print("Please enter valid integer choice")
         else:
             match user_choice:
-                case 1: pass
+                case 1: addTask()
                 case 2: pass
                 case 3: pass
                 case 4: pass
