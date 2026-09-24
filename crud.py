@@ -1,8 +1,9 @@
 def addTask():
+    user_task = input("Enter Task Name: ")
     try:
-        with open("todo.txt", "x") as f:
-            user_todo = input("Enter Task Name: ")
-            f.write(user_todo)
-            print("Todo Added Successfully")
+        with open("todo.txt", "a") as file:
+            file.write(user_task + "\n")
+
+        print("Todo Added Successfully")
     except FileExistsError:
         print("Error", FileExistsError)
