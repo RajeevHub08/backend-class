@@ -1,4 +1,4 @@
-from crud import addTask
+from crud import addTask, viewTask
 
 def mainLogic():
 
@@ -16,7 +16,7 @@ def mainLogic():
         else:
             match user_choice:
                 case 1: addTask()
-                case 2: pass
+                case 2: viewTask()
                 case 3: pass
                 case 4: pass
                 case 5: pass
