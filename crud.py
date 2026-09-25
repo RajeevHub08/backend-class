@@ -7,3 +7,11 @@ def addTask():
         print("Todo Added Successfully")
     except FileExistsError:
         print("Error", FileExistsError)
+
+def viewTask():
+    try:
+        with open("todo.txt", "r") as file:
+            print(file.read())
+
+    except FileExistsError:
+        print("Error", FileExistsError)
