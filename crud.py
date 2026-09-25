@@ -1,3 +1,4 @@
+# Add task functionallity------
 def addTask():
     user_task = input("Enter Task Name: ")
     try:
@@ -8,6 +9,7 @@ def addTask():
     except FileExistsError:
         print("Error", FileExistsError)
 
+# View task functionallity
 def viewTask():
     try:
         with open("todo.txt", "r") as file:
